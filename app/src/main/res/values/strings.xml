@@ -11,4 +11,7 @@
     <string name="google_maps_key"
         templateMergeStrategy= "preserve"
         translatable="false">AIzaSyDQdgj6LIQ38LLEKqw_2JAvYYJ10b8hDnA</string>
+    <string name="title_run_menu">Your Runs</string>
+    <string name="title_settings_menu">Settings</string>
+    <string name="title_statistics_menu">Statistics</string>
 </resources>
