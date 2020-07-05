@@ -4,6 +4,12 @@
     android:id="@+id/nav_graph.xml"
     app:startDestination="@id/setupFragment">
 
+    <!--Define a global action in the nav graph to be able to navigate to the trackingFragment
+     from any other fragment in our activity-->
+    <action android:id="@+id/action_global_trackingFragment"
+            app:destination="@id/trackingFragment"
+            app:launchSingleTop="true"
+        />
 
     <fragment
         android:id="@+id/statisticsFragment"
@@ -15,10 +21,10 @@
         android:label="RunFragment" >
         <action
             android:id="@+id/action_runFragment_to_trackingFragments"
-            app:destination="@id/trackingFragments" />
+            app:destination="@id/trackingFragment" />
     </fragment>
     <fragment
-        android:id="@+id/trackingFragments"
+        android:id="@+id/trackingFragment"
         android:name="com.example.runningtracker.UI.Fragments.TrackingFragments"
         android:label="TrackingFragments" >
         <action
